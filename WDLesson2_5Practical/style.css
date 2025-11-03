@@ -42,7 +42,7 @@
 */
 
 #secondGallery:hover{
-    
+    filter:grayscale(100%)
 }
 
 /* Challenge 14: Change the transition for all elements to 1 second */
