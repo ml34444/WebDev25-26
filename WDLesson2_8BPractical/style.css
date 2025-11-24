@@ -1,2 +1,66 @@
 /* Challenge 2: Use w3SchoolsMockUp.png to help you write the necessary CSS rules.
    Hint: Remember all the fundamental CSS rules when working with flexboxes */
+
+.container{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+#sidebar{
+   flex-direction: column;
+   justify-content: left;
+   display: block;
+   max-width: 100px;
+   flex:1;
+}
+
+a{
+   background-color: transparent;
+   color:white;
+   flex:4;
+   text-decoration: none;
+}
+
+#sidebar a{
+   color:black;
+}
+
+#banner{
+   flex: 1;
+   align-items: center;
+   justify-content: right;
+   flex-direction: row;
+}
+
+#banner div{
+   flex-wrap: nowrap;
+}
+
+#main{
+   padding: 15px;
+   flex:1;
+   justify-content: center;
+   align-items: center;
+}
+
+#sample{
+   flex:4;
+   padding: 15px;
+   justify-content: right;
+   align-items: center;
+}
+
+#Links{
+   background-color: green;
+   flex:3;
+   justify-content: center;
+   padding: 10px;
+   gap: 50px;
+}
+
+#Footer{
+   background-color: green;
+   color: white;
+   flex:3;
+   justify-content: center;
+}
