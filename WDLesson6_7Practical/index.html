@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+   </head>
+  <body onload="init()">
+
+    <div id="title">
+      <hr>
+      <br>
+      <h1>Motor Vehicle Collisions</h1>
+      <br>
+      <hr>
+    </div>
+
+    <div class="container">
+      <div id="left">
+        <div>
+          <h3 style="margin:5px;">Filter</h3>
+          <input type="text" placeholder="Enter Zipcode(s)" id="zip" class="text">
+          <input type="button" value="Search" onclick="filterbyZip()">
+          <input type="text" placeholder="Enter first vehicle type" id="vehicle1" class="text">
+          <input type="text" placeholder="Enter second vehicle type" id="vehicle2" class="text">
+          <input type="button" value="Search" onclick="filterbyCar()">
+        </div>
+      </div>
+      <div id="middle" class="card_container">
+        <div>
+          <h2 style="margin:5px;">Cards</h2>
+            <div id="search" class="container"></div>
+            <div id="output" class="container">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div id="footer">
+      <hr>
+      <br>
+      <br>
+      <br>
+      <br>
+      <hr>
+    </div>
+  </body>
+</html>
