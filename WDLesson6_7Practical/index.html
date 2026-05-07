@@ -16,13 +16,94 @@
 
     <div class="container">
       <div id="left">
-        <div>
-          <h3 style="margin:5px;">Filter</h3>
+        <h3 style="margin:5px;">Filter</h3>
+        <hr>
+        <div class="left">
+          <h5>Filter by Zipcode</h5>
           <input type="text" placeholder="Enter Zipcode(s)" id="zip" class="text">
+          <br>
           <input type="button" value="Search" onclick="filterbyZip()">
-          <input type="text" placeholder="Enter first vehicle type" id="vehicle1" class="text">
-          <input type="text" placeholder="Enter second vehicle type" id="vehicle2" class="text">
+          <p style="font-size: 12px;">(Filtering with one variable)</p>
+        </div>
+        <hr>
+        <div class="left">
+          <h5>Filter by Cars</h5>
+          <select class="text" id="vehicle1">
+          <option>Unspecified</option>
+          <option>Sedan</option>
+          <option>Moped</option>
+          <option>Station Wagon/Sport Utility Vehicle</option>
+          <option>Box Truck</option>
+          <option>Pick-up Truck</option>
+          <option>Tractor Truck Diesel</option>
+          <option>Tanker</option>
+          </select>
+          <p>+</p>
+          <select class="text" id="vehicle2">
+          <option>Unspecified</option>
+          <option>Sedan</option>
+          <option>Moped</option>
+          <option>Station Wagon/Sport Utility Vehicle</option>
+          <option>Box Truck</option>
+          <option>Pick-up Truck</option>
+          <option>Tractor Truck Diesel</option>
+          <option>Tanker</option>
+          </select>
+          <br>
           <input type="button" value="Search" onclick="filterbyCar()">
+          <p style="font-size: 12px;">(Filtering with two variables + and statement)</p>
+        </div>
+        <hr>
+        <div class="left">
+          <h5>Filter by Factors</h5>
+          <select id="factor1">
+          <option>Unspecified</option>
+          <option>Aggressive Driving/Road Rage</option>
+          <option>Pavement Slippery</option>
+          <option>Following Too Closely</option>
+          <option>Passing Too Closely</option>
+          <option>Failure to Yield Right-of-Way</option>
+          <option>Driver Inexperience</option>
+          <option>Passing or Lane Usage Improper</option>
+          <option>Turning Improperly</option>
+          <option>Unsafe Lane Changing</option>
+          <option>Unsafe Speed</option>
+          <option>Reaction to Uninvolved Vehicle</option>
+          <option>Steering Failure</option>
+          <option>Traffic Control Disregarded</option>
+          <option>Other Vehicular</option>
+          <option>Driver Inattention/Distraction</option>
+          <option>Accelerator Defective</option>
+          <option>Pedestrian/Bicyclist/Other Pedestrian Error/Confusion</option>
+          <option>Alcohol Involvement</option>
+          <option>View Obstructed/Limited</option>
+          </select>
+          <p>or</p>
+          <select id="factor2">
+          <option>Unspecified</option>
+          <option>Aggressive Driving/Road Rage</option>
+          <option>Pavement Slippery</option>
+          <option>Following Too Closely</option>
+          <option>Passing Too Closely</option>
+          <option>Failure to Yield Right-of-Way</option>
+          <option>Driver Inexperience</option>
+          <option>Passing or Lane Usage Improper</option>
+          <option>Turning Improperly</option>
+          <option>Unsafe Lane Changing</option>
+          <option>Unsafe Speed</option>
+          <option>Reaction to Uninvolved Vehicle</option>
+          <option>Steering Failure</option>
+          <option>Traffic Control Disregarded</option>
+          <option>Other Vehicular</option>
+          <option>Driver Inattention/Distraction</option>
+          <option>Accelerator Defective</option>
+          <option>Pedestrian/Bicyclist/Other Pedestrian Error/Confusion</option>
+          <option>Alcohol Involvement</option>
+          <option>View Obstructed/Limited</option>
+          </select>
+          <br>
+          <input type="button" value="Search" onclick="filterbyFactor()">
+          <p style="font-size: 12px;">(Filtering with two variables + or statement)</p>
         </div>
       </div>
       <div id="middle" class="card_container">
@@ -37,8 +118,6 @@
     </div>
       <div id="footer">
       <hr>
-      <br>
-      <br>
       <br>
       <br>
       <hr>

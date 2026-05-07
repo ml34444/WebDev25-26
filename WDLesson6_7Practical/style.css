@@ -11,12 +11,13 @@
   flex: 1;
   background-color: rgb(199, 199, 199);
   justify-content: left;
-  min-height: 575px;
-  max-height: 575px;
+  min-height: 610px;
+  max-height: 610px;
   margin: 2.5px;
   border-radius: 10px;
   font-size: 32px;
   text-align: center;
+  overflow: scroll;
 }
 #middle{
   flex: 2;
@@ -62,4 +63,9 @@
 .text{
   padding: 5px;
   margin: 5px;
+}
+.left{
+  border-radius: 20px;
+  border-color: black;
+  border-width: 5px;
 }
